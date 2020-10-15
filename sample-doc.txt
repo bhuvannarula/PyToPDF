@@ -1,0 +1,9 @@
+# this is sample doc file, where 'sample' in filename shall be replaced by the name of file being converted and this should be present in same directory as the file being converted
+<h>
+This is sample heading, printed in bold
+</h>
+<br>
+<p>
+Sample para text
+can be of any no. of lines
+</p>
