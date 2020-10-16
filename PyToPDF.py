@@ -39,9 +39,9 @@ height = 5.5
 fileIn = open(filenameIn,'r').readlines()
 
 main.add_page()
-main.add_font('Monaco','',r'Monaco-01.ttf',True)
-main.add_font('Caviar-Bold','',r'Caviar_Dreams_Bold.ttf',True)
-main.add_font('Caviar','',r'CaviarDreams.ttf',True)
+main.add_font('Monaco','',r'fonts/Monaco-01.ttf',True)
+main.add_font('Caviar-Bold','',r'fonts/Caviar_Dreams_Bold.ttf',True)
+main.add_font('Caviar','',r'fonts/CaviarDreams.ttf',True)
 main.set_auto_page_break(True,margin=18)
 main.set_font('Monaco','',11)
 
