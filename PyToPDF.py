@@ -9,6 +9,7 @@ from tkinter import Tk, filedialog
 Run this program to convert python code to pdf with line numbers and standard python IDLE formatting
 
 asks for .py file, and creates .pdf file in same directory as the .py file
+if *-doc.py is present in same directory as *.py, doc is added to .pdf file
 '''
 
 mainwin = Tk()
@@ -51,7 +52,9 @@ if path.isfile(docfilename):
 
 ii = 0
 while ii < len(docfileIn):
-    if '<h>' in docfileIn[ii]:
+    if '#' in docfileIn[ii]:
+        ii+=1
+    elif '<h>' in docfileIn[ii]:
         main.set_font('Caviar-Bold','',28)
         main.write(height*2.5,docfileIn[ii+1]) #15
         ii+=3
