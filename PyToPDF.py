@@ -130,12 +130,15 @@ def lineformat1(line):
         elif temp1[i] in builtin_function_names:
             ptxt(temp1[i],'purple')
             i+=1
-        elif '_' in temp1[i]:
-            ptxt(temp1[i],'lightblue')
-            i+=1
         else:
             ptxt(temp1[i])
             i+=1
+
+        '''
+        elif '_' in temp1[i]:
+            ptxt(temp1[i],'lightblue')
+            i+=1
+        '''
 
 ttt = False
 i = 1
